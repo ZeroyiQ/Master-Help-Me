@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="top.zeroyiq.master_help_me">
+
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 敏感权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+
+        <!-- 更新url -->
+        <meta-data
+            android:name="updateUrl"
+            android:value="" />
+        <!-- sms短信 -->
+        <meta-data
+            android:name="smsKey"
+            android:value="20b1c7f09b598" />
+        <meta-data
+            android:name="smsKeySecret"
+            android:value="181340b98c4fd612dd67ec44124f4d30" />
+
+        <!-- dreamFactory -->
+        <meta-data
+            android:name="instanceUrl"
+            android:value="http://123.206.255.35/api/v2/" />
+        <meta-data
+            android:name="apiKey"
+            android:value="6f84624002bd1ba1e3fe053e0bc7d0a38317b59a9603fe66fb1397a0d44d006d" />
+
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:theme="@style/MyAppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:label="注册"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/nav_bbs"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:theme="@style/MyAppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.RankActivity"
+            android:label="@string/title_activity_rank"
+            android:theme="@style/MyAppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activities.CenterActivity"
+            android:label="@string/title_activity_center"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activities.PostQuestionActivity"
+            android:label="@string/title_activity_post_question"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".activities.PostAnswerActivity"
+            android:label="@string/title_activity_post_answer"
+            android:theme="@style/MyAppTheme" />
+    </application>
+
+</manifest>

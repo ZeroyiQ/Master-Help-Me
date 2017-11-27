@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">大神带我飞</string>
+    <string name="nav_bbs">问答论坛</string>
+    <string name="nav_rank">排行</string>
+    <string name="nav_message">消息</string>
+    <string name="nav_center">个人中心</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rank">排名</string>
+    <string name="rank_name">用户名：</string>
+    <string name="rank_questions_num">回答问题数：</string>
+    <string name="rank">排名：</string>
+    <string name="title_activity_message">消息</string>
+    <string name="message_title">问题：</string>
+    <string name="message_answerer">回答者：</string>
+    <string name="message_context">内容：</string>
+    <string name="title_activity_center">个人中心</string>
+    <string name="title_activity_post_question">提问</string>
+    <string name="title_activity_post_answer">回答</string>
+    <string name="answer">回答：</string>
+</resources>

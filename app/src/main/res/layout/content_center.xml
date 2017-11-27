@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="top.zeroyiq.master_help_me.activities.CenterActivity"
+    android:background="@color/colorBackgroundGray"
+    tools:showIn="@layout/activity_center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/login_map"
+                android:src="@drawable/logo_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                 />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="用户名"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_oldPassword"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="26dp"
+                android:hint="旧密码："
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editText_newPassword"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:hint="新密码："
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editText_repeatNewPassword"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:hint="确认新密码："
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bt_button_blue"
+                android:text="修改密码"
+                android:textColor="@color/colorPureWhite"
+                android:textSize="16sp"
+
+                />
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bt_button_blue"
+                android:text="退出登录"
+                android:textColor="@color/colorPureWhite"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

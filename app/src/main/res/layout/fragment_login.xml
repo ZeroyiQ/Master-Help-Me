@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPureWhite"
+    android:orientation="vertical"
+    tools:context="top.zeroyiq.master_help_me.fragments.LoginFragment">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar_login"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:id="@+id/registerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/login_map"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/edit_login_email"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:hint="邮箱："
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edit_login_password"
+                style="@style/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:hint="密码："
+                android:inputType="textPassword" />
+
+
+            <Button
+                android:id="@+id/btn_login_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bt_button_blue"
+                android:text="登录"
+                android:textColor="@color/colorPureWhite" />
+
+            <Button
+                android:id="@+id/btn_forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bt_button_blue"
+                android:text="找回密码"
+                android:textColor="@color/colorPureWhite" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
